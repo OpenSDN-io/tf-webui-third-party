@@ -1,5 +1,5 @@
 [gerrit]
-host=gerrit.tungsten.io
+host=gerrit.opensdn.io
 port=29418
-project=tungstenfabric/tf-webui-third-party.git
+project=opensdn-io/tf-webui-third-party.git
 defaultbranch=master
