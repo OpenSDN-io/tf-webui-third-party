@@ -18,7 +18,7 @@
     <name>grunt</name>
     <urls>
       <url>{{ site_mirror }}/contrail-third-party/contrail-webui/common/npm-sources/grunt-0.4.5.tar.gz</url>
-      <url canonical="true">https://github.com/tungstenfabric/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/grunt-0.4.5.tar.gz</url>
+      <url canonical="true">https://github.com/opensdn-io/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/grunt-0.4.5.tar.gz</url>
     </urls>
     <format>npm-cached</format>
     <md5>fa416971a26aa56d6768b7c3f9d9f69d</md5>
@@ -27,7 +27,7 @@
     <name>karma</name>
     <urls>
       <url>{{ site_mirror }}/contrail-third-party/contrail-webui/common/karma-0.12.37.tar.gz</url>
-      <url canonical="true">https://github.com/tungstenfabric/tf-third-party-cache/raw/master/contrail-webui/common/karma-0.12.37.tar.gz</url>
+      <url canonical="true">https://github.com/opensdn-io/tf-third-party-cache/raw/master/contrail-webui/common/karma-0.12.37.tar.gz</url>
     </urls>
     <format>npm</format>
     <md5>a94ab0c71a10d9975ca4c2a671107138</md5>
@@ -39,17 +39,17 @@
     <name>phantomjs</name>
     <urls>
       <url>{{ site_mirror }}/contrail-third-party/contrail-webui/common/phantomjs-1.9.19.tgz</url>
-      <url canonical="true">https://github.com/tungstenfabric/tf-third-party-cache/raw/master/contrail-webui/common/phantomjs-1.9.19.tgz</url>
+      <url canonical="true">https://github.com/opensdn-io/tf-third-party-cache/raw/master/contrail-webui/common/phantomjs-1.9.19.tgz</url>
     </urls>
     <format>npm</format>
-    <install-arguments>--phantomjs_cdnurl=https://github.com/tungstenfabric/tf-third-party-cache/raw/master/contrail-webui/common/phantomjs-bin</install-arguments>
+    <install-arguments>--phantomjs_cdnurl=https://github.com/opensdn-io/tf-third-party-cache/raw/master/contrail-webui/common/phantomjs-bin</install-arguments>
     <md5>d0715ffef1331c1a6fd324668041a22a</md5>
   </package>
   <package>
     <name>karma-phantomjs-launcher</name>
     <urls>
       <url>{{ site_mirror }}/contrail-third-party/contrail-webui/common/karma-phantomjs-launcher-0.2.1.tar.gz</url>
-      <url canonical="true">https://github.com/tungstenfabric/tf-third-party-cache/raw/master/contrail-webui/common/karma-phantomjs-launcher-0.2.1.tar.gz</url>
+      <url canonical="true">https://github.com/opensdn-io/tf-third-party-cache/raw/master/contrail-webui/common/karma-phantomjs-launcher-0.2.1.tar.gz</url>
     </urls>
     <format>npm</format>
     <md5>d3cfc5a01e156ddd855923b2d60046f2</md5>
@@ -58,7 +58,7 @@
     <name>grunt-contrib-qunit</name>
     <urls>
       <url>{{ site_mirror }}/contrail-third-party/contrail-webui/common/npm-sources/grunt-contrib-qunit-0.7.0.tar.gz</url>
-      <url canonical="true">https://github.com/tungstenfabric/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/grunt-contrib-qunit-0.7.0.tar.gz</url>
+      <url canonical="true">https://github.com/opensdn-io/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/grunt-contrib-qunit-0.7.0.tar.gz</url>
     </urls>
     <format>npm-cached</format>
     <md5>7c525727cb3c4f02c37c9486638400ca</md5>
@@ -67,7 +67,7 @@
     <name>grunt-contrib-jshint</name>
     <urls>
       <url>{{ site_mirror }}/contrail-third-party/contrail-webui/common/npm-sources/grunt-contrib-jshint-0.11.3.tar.gz</url>
-      <url canonical="true">https://github.com/tungstenfabric/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/grunt-contrib-jshint-0.11.3.tar.gz</url>
+      <url canonical="true">https://github.com/opensdn-io/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/grunt-contrib-jshint-0.11.3.tar.gz</url>
     </urls>
     <format>npm-cached</format>
     <md5>6e4d14133e19cbe4468fee88948c425b</md5>
@@ -76,7 +76,7 @@
     <name>grunt-contrib-concat</name>
     <urls>
       <url>{{ site_mirror }}/contrail-third-party/contrail-webui/common/npm-sources/grunt-contrib-concat-0.5.1.tar.gz</url>
-      <url canonical="true">https://github.com/tungstenfabric/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/grunt-contrib-concat-0.5.1.tar.gz</url>
+      <url canonical="true">https://github.com/opensdn-io/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/grunt-contrib-concat-0.5.1.tar.gz</url>
     </urls>
     <format>npm-cached</format>
     <md5>dad50bd95b4eb6915160fa367b430e06</md5>
@@ -85,7 +85,7 @@
     <name>grunt-qunit-junit</name>
     <urls>
       <url>{{ site_mirror }}/contrail-third-party/contrail-webui/common/npm-sources/grunt-qunit-junit-0.3.1.tar.gz</url>
-      <url canonical="true">https://github.com/tungstenfabric/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/grunt-qunit-junit-0.3.1.tar.gz</url>
+      <url canonical="true">https://github.com/opensdn-io/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/grunt-qunit-junit-0.3.1.tar.gz</url>
     </urls>
     <format>npm-cached</format>
     <md5>0ce37e33b8d63a7e744e61f3750dccb8</md5>
@@ -94,7 +94,7 @@
     <name>grunt-node-qunit</name>
     <urls>
       <url>{{ site_mirror }}/contrail-third-party/contrail-webui/common/npm-sources/grunt-node-qunit-2.0.2.tar.gz</url>
-      <url canonical="true">https://github.com/tungstenfabric/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/grunt-node-qunit-2.0.2.tar.gz</url>
+      <url canonical="true">https://github.com/opensdn-io/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/grunt-node-qunit-2.0.2.tar.gz</url>
     </urls>
     <format>npm-cached</format>
     <md5>1555b0fb79032c8578b7486affd740ee</md5>
@@ -106,7 +106,7 @@
     <name>grunt-blanket-qunit</name>
     <urls>
       <url>{{ site_mirror }}/contrail-third-party/contrail-webui/common/npm-sources/grunt-blanket-qunit-0.2.0.tar.gz</url>
-      <url canonical="true">https://github.com/tungstenfabric/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/grunt-blanket-qunit-0.2.0.tar.gz</url>
+      <url canonical="true">https://github.com/opensdn-io/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/grunt-blanket-qunit-0.2.0.tar.gz</url>
     </urls>
     <format>npm-cached</format>
     <md5>6d2f4679f413cb6c6c762edba373bffd</md5>
@@ -115,7 +115,7 @@
     <name>qunit</name>
     <urls>
       <url>{{ site_mirror }}/contrail-third-party/contrail-webui/common/npm-sources/qunit-0.7.7.tar.gz</url>
-      <url canonical="true">https://github.com/tungstenfabric/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/qunit-0.7.7.tar.gz</url>
+      <url canonical="true">https://github.com/opensdn-io/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/qunit-0.7.7.tar.gz</url>
     </urls>
     <format>npm-cached</format>
     <md5>2c86dcfe990b8aa0925d727940dde5e8</md5>
@@ -124,7 +124,7 @@
     <name>grunt-karma</name>
     <urls>
       <url>{{ site_mirror }}/contrail-third-party/contrail-webui/common/grunt-karma-0.8.2.tar.gz</url>
-      <url canonical="true">https://github.com/tungstenfabric/tf-third-party-cache/raw/master/contrail-webui/common/grunt-karma-0.8.2.tar.gz</url>
+      <url canonical="true">https://github.com/opensdn-io/tf-third-party-cache/raw/master/contrail-webui/common/grunt-karma-0.8.2.tar.gz</url>
     </urls>
     <format>npm</format>
     <md5>d6c1a9f42484e7d4e13b0d8b5b33c5a4</md5>
@@ -133,7 +133,7 @@
     <name>karma-requirejs</name>
     <urls>
       <url>{{ site_mirror }}/contrail-third-party/contrail-webui/common/npm-sources/karma-requirejs-0.2.2.tar.gz</url>
-      <url canonical="true">https://github.com/tungstenfabric/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/karma-requirejs-0.2.2.tar.gz</url>
+      <url canonical="true">https://github.com/opensdn-io/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/karma-requirejs-0.2.2.tar.gz</url>
     </urls>
     <format>npm-cached</format>
     <md5>701ffa5c3a9949bb5eda3def6edfb090</md5>
@@ -142,7 +142,7 @@
     <name>karma-qunit</name>
     <urls>
       <url>{{ site_mirror }}/contrail-third-party/contrail-webui/common/npm-sources/karma-qunit-0.1.7.tar.gz</url>
-      <url canonical="true">https://github.com/tungstenfabric/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/karma-qunit-0.1.7.tar.gz</url>
+      <url canonical="true">https://github.com/opensdn-io/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/karma-qunit-0.1.7.tar.gz</url>
     </urls>
     <format>npm-cached</format>
     <md5>b1ad01e5b2b12abe0d621ec8c0e87dd2</md5>
@@ -154,7 +154,7 @@
     <name>karma-coverage</name>
     <urls>
       <url>{{ site_mirror }}/contrail-third-party/contrail-webui/common/npm-sources/karma-coverage-0.5.3.tar.gz</url>
-      <url canonical="true">https://github.com/tungstenfabric/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/karma-coverage-0.5.3.tar.gz</url>
+      <url canonical="true">https://github.com/opensdn-io/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/karma-coverage-0.5.3.tar.gz</url>
     </urls>
     <format>npm-cached</format>
     <md5>fd2d0b08c07044a410f7fa90e356c1b8</md5>
@@ -163,7 +163,7 @@
     <name>karma-html-reporter</name>
     <urls>
       <url>{{ site_mirror }}/contrail-third-party/contrail-webui/common/npm-sources/karma-html-reporter-0.2.7.tar.gz</url>
-      <url canonical="true">https://github.com/tungstenfabric/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/karma-html-reporter-0.2.7.tar.gz</url>
+      <url canonical="true">https://github.com/opensdn-io/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/karma-html-reporter-0.2.7.tar.gz</url>
     </urls>
     <format>npm-cached</format>
     <md5>30c83aa4d4c1740e39ddd53cb6eca508</md5>
@@ -172,7 +172,7 @@
     <name>karma-htmlfile-reporter</name>
     <urls>
       <url>{{ site_mirror }}/contrail-third-party/contrail-webui/common/npm-sources/karma-htmlfile-reporter-0.2.2.tar.gz</url>
-      <url canonical="true">https://github.com/tungstenfabric/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/karma-htmlfile-reporter-0.2.2.tar.gz</url>
+      <url canonical="true">https://github.com/opensdn-io/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/karma-htmlfile-reporter-0.2.2.tar.gz</url>
     </urls>
     <format>npm-cached</format>
     <md5>1cea8be3f018523f7f8d461c596ac3c7</md5>
@@ -181,7 +181,7 @@
     <name>karma-firefox-launcher</name>
     <urls>
       <url>{{ site_mirror }}/contrail-third-party/contrail-webui/common/npm-sources/karma-firefox-launcher-0.1.6.tar.gz</url>
-      <url canonical="true">https://github.com/tungstenfabric/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/karma-firefox-launcher-0.1.6.tar.gz</url>
+      <url canonical="true">https://github.com/opensdn-io/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/karma-firefox-launcher-0.1.6.tar.gz</url>
     </urls>
     <format>npm-cached</format>
     <md5>f07dac141e6ba20fe0014f9616f389a3</md5>
@@ -190,7 +190,7 @@
     <name>qunitjs</name>
     <urls>
       <url>{{ site_mirror }}/contrail-third-party/contrail-webui/common/npm-sources/qunitjs-1.20.0.tar.gz</url>
-      <url canonical="true">https://github.com/tungstenfabric/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/qunitjs-1.20.0.tar.gz</url>
+      <url canonical="true">https://github.com/opensdn-io/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/qunitjs-1.20.0.tar.gz</url>
     </urls>
     <format>npm-cached</format>
     <md5>c2c3fd9ea6f2c326bae8866127b5d144</md5>
@@ -199,7 +199,7 @@
     <name>karma-chrome-launcher</name>
     <urls>
       <url>{{ site_mirror }}/contrail-third-party/contrail-webui/common/npm-sources/karma-chrome-launcher-2.2.0.tar.gz</url>
-      <url canonical="true">https://github.com/tungstenfabric/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/karma-chrome-launcher-2.2.0.tar.gz</url>
+      <url canonical="true">https://github.com/opensdn-io/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/karma-chrome-launcher-2.2.0.tar.gz</url>
     </urls>
     <format>npm-cached</format>
     <md5>25e95e6ad6a1f8963770ae5701c0d607</md5>
@@ -211,7 +211,7 @@
     <name>karma-html2js-preprocessor</name>
     <urls>
       <url>{{ site_mirror }}/contrail-third-party/contrail-webui/common/npm-sources/karma-html2js-preprocessor-0.1.0.tar.gz</url>
-      <url canonical="true">https://github.com/tungstenfabric/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/karma-html2js-preprocessor-0.1.0.tar.gz</url>
+      <url canonical="true">https://github.com/opensdn-io/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/karma-html2js-preprocessor-0.1.0.tar.gz</url>
     </urls>
     <format>npm-cached</format>
     <md5>17992ba98cf6c94a6bfa23297bb74985</md5>
@@ -220,7 +220,7 @@
     <name>karma-junit-reporter</name>
     <urls>
       <url>{{ site_mirror }}/contrail-third-party/contrail-webui/common/npm-sources/karma-junit-reporter-0.3.8.tar.gz</url>
-      <url canonical="true">https://github.com/tungstenfabric/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/karma-junit-reporter-0.3.8.tar.gz</url>
+      <url canonical="true">https://github.com/opensdn-io/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/karma-junit-reporter-0.3.8.tar.gz</url>
     </urls>
     <format>npm-cached</format>
     <md5>8ca0ad15c18a8ae9e9ba58cceb1ff7a4</md5>
@@ -229,7 +229,7 @@
     <name>karma-safari-launcher</name>
     <urls>
       <url>{{ site_mirror }}/contrail-third-party/contrail-webui/common/npm-sources/karma-safari-launcher-0.1.1.tar.gz</url>
-      <url canonical="true">https://github.com/tungstenfabric/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/karma-safari-launcher-0.1.1.tar.gz</url>
+      <url canonical="true">https://github.com/opensdn-io/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/karma-safari-launcher-0.1.1.tar.gz</url>
     </urls>
     <format>npm-cached</format>
     <md5>cbed7abe823a3f2b219d176611aa201f</md5>
@@ -238,7 +238,7 @@
     <name>sinon</name>
     <urls>
       <url>{{ site_mirror }}/contrail-third-party/contrail-webui/common/npm-sources/sinon-1.17.2.tar.gz</url>
-      <url canonical="true">https://github.com/tungstenfabric/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/sinon-1.17.2.tar.gz</url>
+      <url canonical="true">https://github.com/opensdn-io/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/sinon-1.17.2.tar.gz</url>
     </urls>
     <format>npm-cached</format>
     <md5>6752f492828e5705c042ce93a0270999</md5>
@@ -247,7 +247,7 @@
     <name>karma-sinon</name>
     <urls>
       <url>{{ site_mirror }}/contrail-third-party/contrail-webui/common/npm-sources/karma-sinon-1.0.4.tar.gz</url>
-      <url canonical="true">https://github.com/tungstenfabric/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/karma-sinon-1.0.4.tar.gz</url>
+      <url canonical="true">https://github.com/opensdn-io/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/karma-sinon-1.0.4.tar.gz</url>
     </urls>
     <format>npm-cached</format>
     <md5>572a1f26f1318dc9108eafeb588b997d</md5>
@@ -256,7 +256,7 @@
     <name>grunt-cli</name>
     <urls>
       <url>{{ site_mirror }}/contrail-third-party/contrail-webui/common/npm-sources/grunt-cli-0.1.13.tar.gz</url>
-      <url canonical="true">https://github.com/tungstenfabric/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/grunt-cli-0.1.13.tar.gz</url>
+      <url canonical="true">https://github.com/opensdn-io/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/grunt-cli-0.1.13.tar.gz</url>
     </urls>
     <format>npm-cached</format>
     <md5>4133427fd8313bcd6e1be869b8c72678</md5>
@@ -265,7 +265,7 @@
     <name>eslint</name>
     <urls>
       <url>{{ site_mirror }}/contrail-third-party/contrail-webui/common/npm-sources/eslint-2.13.1.tar.gz</url>
-      <url canonical="true">https://github.com/tungstenfabric/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/eslint-2.13.1.tar.gz</url>
+      <url canonical="true">https://github.com/opensdn-io/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/eslint-2.13.1.tar.gz</url>
     </urls>
     <format>npm-cached</format>
     <md5>5daca0f0e19152ab86e4abaa66e31a7d</md5>
@@ -274,7 +274,7 @@
     <name>csslint</name>
     <urls>
       <url>{{ site_mirror }}/contrail-third-party/contrail-webui/common/npm-sources/csslint-1.0.2.tar.gz</url>
-      <url canonical="true">https://github.com/tungstenfabric/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/csslint-1.0.2.tar.gz</url>
+      <url canonical="true">https://github.com/opensdn-io/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/csslint-1.0.2.tar.gz</url>
     </urls>
     <format>npm-cached</format>
     <md5>47645297e4ebacfd3abadb9c9b2a09cf</md5>
@@ -283,7 +283,7 @@
     <name>grunt-contrib-csslint</name>
     <urls>
       <url>{{ site_mirror }}/contrail-third-party/contrail-webui/common/npm-sources/grunt-contrib-csslint-1.0.0.tar.gz</url>
-      <url canonical="true">https://github.com/tungstenfabric/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/grunt-contrib-csslint-1.0.0.tar.gz</url>
+      <url canonical="true">https://github.com/opensdn-io/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/grunt-contrib-csslint-1.0.0.tar.gz</url>
     </urls>
     <format>npm-cached</format>
     <md5>df7f6934bfab766ef767e39073e7b376</md5>
@@ -292,7 +292,7 @@
     <name>csslint-stylish</name>
     <urls>
       <url>{{ site_mirror }}/contrail-third-party/contrail-webui/common/npm-sources/csslint-stylish-0.0.4.tar.gz</url>
-      <url canonical="true">https://github.com/tungstenfabric/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/csslint-stylish-0.0.4.tar.gz</url>
+      <url canonical="true">https://github.com/opensdn-io/tf-third-party-cache/raw/master/contrail-webui/common/npm-sources/csslint-stylish-0.0.4.tar.gz</url>
     </urls>
     <format>npm-cached</format>
     <md5>dbd7bfd285b8140fe8417e65d84ed950</md5>
