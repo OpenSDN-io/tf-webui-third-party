@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Copyright (c) 2013 Juniper Networks, Inc. All rights reserved.
 #
@@ -12,6 +12,11 @@ import sys
 import platform
 from time import sleep
 
+try:
+    import distro
+except ImportError:
+    pass
+
 ARGS = dict()
 ARGS['filename'] = 'packages.xml'
 ARGS['cache_dir'] = '/tmp/cache/' + os.environ['USER'] + '/webui_third_party'
@@ -23,7 +28,7 @@ ARGS['site_mirror'] = None
 
 _RETRIES = 5
 _TAR_COMMAND = ['tar', '--no-same-owner']
-_CACHED_PKG_DISTROS = ('Ubuntu', 'Red Hat', 'CentOS', 'darwin')
+_CACHED_PKG_DISTROS = ('Ubuntu', 'Red Hat', 'CentOS', 'darwin', 'Rocky Linux')
 
 from lxml import objectify
 
@@ -52,7 +57,7 @@ def setTarCommand():
 def isTarGnuVersion():
     cmd = subprocess.Popen(['tar', '--version'],
                            stdout=subprocess.PIPE)
-    output = cmd.communicate()[0]
+    output = cmd.communicate()[0].decode()
     first = output.split('\n')[0]
     if first.lower().find('gnu') != -1:
         return True
@@ -63,7 +68,7 @@ def getTarDestination(tgzfile, compress_flag):
     cmd = subprocess.Popen(_TAR_COMMAND + ['--exclude=.*', '-' + compress_flag + 'tf', tgzfile],
                            stdout=subprocess.PIPE)
     (output, _) = cmd.communicate()
-    (first, _) = output.split('\n', 1)
+    (first, _) = output.decode().split('\n', 1)
     fields = first.split('/')
     return fields[0]
 
@@ -72,7 +77,7 @@ def getZipDestination(tgzfile):
     cmd = subprocess.Popen(['unzip', '-t', tgzfile],
                            stdout=subprocess.PIPE)
     (output, _) = cmd.communicate()
-    lines = output.split('\n')
+    lines = output.decode().split('\n')
     for line in lines:
         print(line)
         m = re.search(r'testing:\s+([\w\-\.]+)\/', line)
@@ -106,15 +111,18 @@ def ApplyPatches(pkg):
 
 
 def GetOSDistro():
-    distro = ''
+    distrib = ''
     if sys.platform == 'darwin':
         return sys.platform
     else:
         try:
-            return platform.linux_distribution()[0]
+            if hasattr(platform, 'linux_distribution'):
+                return platform.linux_distribution()[0]
+            else:
+                return distro.linux_distribution()[0]
         except Exception:
-            pass
-    return distro
+                pass
+    return distrib
 
 
 def ResolveEmptyDistro(url, md5, pkg):
@@ -124,32 +132,36 @@ def ResolveEmptyDistro(url, md5, pkg):
     # Change the pkg format to npm download the dependencies
     if pkg.format == 'npm-cached':
         pkg.format = 'npm'
+    return url, md5
 
 
 def ResolveDistro(url, md5, ccfile, pkg):
-    distro = GetOSDistro()
-    if not distro:
+    distrib = GetOSDistro()
+    if not distrib:
         url, md5 = ResolveEmptyDistro(url, md5, pkg)
         return (url, md5, ccfile)
 
-    # check if we have the distro in our cache
+    # check if we have the distrib in our cache
     found = False
     for cached_pkg in _CACHED_PKG_DISTROS:
-        if cached_pkg in distro:
-            distro = cached_pkg
+        if cached_pkg in distrib:
+            distrib = cached_pkg
             found = True
             break
     if not found:
         url, md5 = ResolveEmptyDistro(url, md5, pkg)
         return (url, md5, ccfile)
 
-    distro = distro.lower().replace(" ", "")
-    url = url.replace('$distro', distro)
-    md5 = md5[distro]
-    pkg.distro = distro
-    # Change the ccfile, add distro before the package name
+    distrib = distrib.lower().replace(" ", "")
+    # TODO: add packages for rocky?
+    if distrib == "rockylinux":
+        distrib = "centos"
+    url = url.replace('$distro', distrib)
+    md5 = md5[distrib]
+    pkg.distrib = distrib
+    # Change the ccfile, add distrib before the package name
     idx = ccfile.rfind("/")
-    pkgCachePath = ccfile[:idx] + "/" + distro
+    pkgCachePath = ccfile[:idx] + "/" + distrib
     pkg.pkgCachePath = pkgCachePath
     pkg.ccfile = pkgCachePath + "/" + ccfile[idx + 1:]
     ccfile = pkg.ccfile.text
@@ -275,8 +287,8 @@ def ProcessPackage(pkg):
         cmd = ['unzip', '-oq', ccfile]
     elif pkg.format == 'npm':
         newDir = ARGS['cache_dir']
-        if 'distro' in pkg:
-            newDir = newDir + pkg.distro
+        if 'distrib' in pkg:
+            newDir = newDir + pkg.distrib
         cmd = ['npm', 'install', ccfile, '--prefix', newDir]
         if installArguments:
             cmd.append(str(installArguments))
@@ -340,7 +352,7 @@ def FindMd5sum(anyfile):
     proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stdin=subprocess.PIPE)
     stdout, stderr = proc.communicate()
     md5sum = stdout.split()[0]
-    return md5sum
+    return md5sum.decode()
 
 
 def parse_args():
