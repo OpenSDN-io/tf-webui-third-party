@@ -1042,6 +1042,14 @@
         </md5>
     </package>
     <package>
+        <name>dart-sass</name>
+        <urls>
+            <url>https://github.com/sass/dart-sass/releases/download/1.81.0/dart-sass-1.81.0-linux-x64.tar.gz</url>
+        </urls>
+        <format>npm-cached</format>
+        <md5>c1673294ca5eef88143c6720e5a464d4</md5>
+    </package>
+    <package>
         <name>bootstrap-sass</name>
         <urls>
             <url>{{ site_mirror }}/contrail-third-party/contrail-webui/common/npm-sources/$distro/bootstrap-sass-3.3.6.tar.gz</url>
